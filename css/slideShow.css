@@ -3,6 +3,9 @@
  */
 .slideShow {
     position: relative;
+    width:500px;
+    height:400px;
+    margin:10px auto;
 }
 .slideShow .prev,
 .slideShow .next {
@@ -15,12 +18,12 @@
         .prev,
         .next {
             background:#000;
-            font-size:50px;
-            bottom:0;
+            font-size:20px;
+            bottom:10px;
             padding:5px;
         }
         .next {
-            left:100px;
+            right:10px;
         }
         .prev {
             left:10px;
@@ -40,8 +43,7 @@
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 
-    width:500px;
-    border:1px solid red;
+    
 }
 .slideShow ul li {
     width: 100%;
@@ -67,8 +69,8 @@
     bottom: 0;    
     z-index: 5;
     overflow: hidden;
-    visibility: hidden;
-    /*not shown on default*/
+    /*visibility: hidden;
+    not shown on default*/
 }
 .slideShow .indicator ol {
     overflow: hidden;

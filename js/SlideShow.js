@@ -67,8 +67,11 @@ define('slideshow', [],function(){
         //btns
         this.nextBtn = document.createElement('div');
         this.nextBtn.classList.add('next');
+        this.nextBtn.innerHTML = "next";
         this.prevBtn = document.createElement('div');
         this.prevBtn.classList.add('prev');
+        this.prevBtn.innerHTML = "prev";
+
 
         this.view.appendChild(this.nextBtn);
         this.view.appendChild(this.prevBtn);

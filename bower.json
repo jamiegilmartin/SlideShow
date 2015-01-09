@@ -1,0 +1,21 @@
+{
+  "name": "SlideShow",
+  "version": "1.0.2",
+  "homepage": "https://github.com/jamiegilmartin/SlideShow",
+  "authors": [
+    "Jamie Gilmartin jamiegilmartin@gmail.com"
+  ],
+  "description": "css3 based slideshow",
+  "main": "slideshow.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.15"
+  }
+}

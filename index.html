@@ -1,89 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Slide Show</title>
+    <title>Slide Show</title>
+    
+    <link href="css/slideShow.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            padding:0;
+            margin:0;
+            font-size:10px;
+            font-family:monospace;
+        }
+        body * {
+            padding:0;
+            margin:0;
+        }
+        ul li p {
+            font-size:100px;
+        }
+    </style>
 
-	<link href="css/slideShow.css" rel="stylesheet" type="text/css" />
-	<style>
-		body {
-			padding:0;
-			margin:0;
-			font-size:10px;
-			font-family:monospace;
-		}
-		body * {
-			padding:0;
-			margin:0;
-		}
+    <script data-main="js/main" src="bower_components/requirejs/require.js"></script>
 
-		/*add height to slide*/
-		li.slide {
-			height:500px !important;
-			background:#ccc;
-			border:1px dotted red;
-		}
-		li.slide p {
-			font-size:100px;
-		}
-		.prev,
-		.next {
-			background:#000;
-			font-size:50px;
-			bottom:0;
-			padding:5px;
-		}
-		.next {
-			left:100px;
-		}
-		.prev {
-			left:10px;
-		}
-	</style>
-	<script src="js/SlideShow.js" type="text/javascript" charset="utf-8"></script>
-	
-	<script>
-
-		window.addEventListener('load',function(){
-			var slideShow_1 = document.getElementById('slideShow_1');
-
-			var ss1 = new SlideShow({
-				view : slideShow_1,
-				duration : 1,
-				looping : true,
-				fullscreen :  true
-			});
-
-
-		},false);
-		
-	</script>
 </head>
 
 </head>
 <body>
 
 
-	<div id="slideShow_1" class="slideShow">
-		<div class="prev"><</div>
-		<div class="next">></div>
-		<ul>
-			<li class="slide">
-				<p>1</p>
-			</li>
-			<li class="slide">
-				<p>2</p>
-			</li>
-			<li class="slide">
-				<p>3</p>
-			</li>
-			<li class="slide">
-				<p>4</p>
-			</li>
-			<li class="slide">
-				<p>5</p>
-			</li>
-		</ul>
-	</div>
+    <div id="slideShow_1" class="slideShow">
+        <ul>
+            <li>
+                <p>1</p>
+            </li>
+            <li>
+                <p>2</p>
+            </li>
+            <li>
+                <p>3</p>
+            </li>
+            <li>
+                <p>4</p>
+            </li>
+            <li>
+                <p>5</p>
+            </li>
+        </ul>
+    </div>
 
 
 </body>
